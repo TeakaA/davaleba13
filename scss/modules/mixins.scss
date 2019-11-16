@@ -1,0 +1,5 @@
+@mixin flex-position ($horizontal,$vertical){
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+    
