@@ -11,10 +11,15 @@
 .logo {
     height: 50px;
 }
-navbar{
+nav{
     @extend %flex;
     ul{
+        @extend %flex;
+        li{
+            @include flex-position (space-between, center);
+        }
+    }
         
     }
 }
-}
+
