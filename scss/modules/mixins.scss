@@ -2,4 +2,9 @@
     justify-content: $horizontal;
     align-items: $vertical;
 }
+@mixin background($bgsize,$bgrepeat,$bgposition){
+    background-size: $bgsize;
+    background-repeat: $bgrepeat;
+    background-position: $bgposition;
+}
     

@@ -42,7 +42,7 @@ a {
   width: 100%;
   margin: 50px auto; }
 
-.container, .container navbar {
+.container, .container nav, .container nav ul, .lifestyle-box, .photo-box, .container .enter, .last-box, footer .privacy {
   display: flex; }
 
 .container {
@@ -50,7 +50,7 @@ a {
   width: 100%;
   margin: 50px auto; }
 
-.container, .container navbar {
+.container, .container nav, .container nav ul, .lifestyle-box, .photo-box, .container .enter, .last-box, footer .privacy {
   display: flex; }
 
 .container {
@@ -58,3 +58,175 @@ a {
   align-items: center; }
   .container .logo {
     height: 50px; }
+    @media screen and (max-width: 1024px) {
+      .container .logo {
+        display: none; } }
+  @media screen and (max-width: 768px) {
+    .container nav {
+      margin-left: 50px; } }
+  .container nav ul li {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px; }
+    .container nav ul li a {
+      font-size: 20px;
+      color: #000;
+      font-family: "Playfair Display", serif;
+      text-transform: uppercase; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .main-poster {
+    width: 90%; } }
+
+.photodiary {
+  padding: 0 30% 0 15%; }
+  .photodiary p {
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px; }
+  .photodiary h1 {
+    font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px; }
+  .photodiary .diary-txt {
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    margin-top: 15px; }
+
+.lifestyle-box {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30% 0 15%;
+  margin-top: 100px; }
+  @media screen and (max-width: 1024px) {
+    .lifestyle-box {
+      padding: 5%; } }
+  @media screen and (max-width: 768px) {
+    .lifestyle-box {
+      flex-direction: column;
+      text-align: center; } }
+  .lifestyle-box .box {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px; }
+    .lifestyle-box .box p {
+      font-size: 14px;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      margin-top: 15px; }
+      @media screen and (max-width: 768px) {
+        .lifestyle-box .box p {
+          margin-block-start: 20px; } }
+    .lifestyle-box .box h1 {
+      font-size: 20px;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      margin-top: 15px; }
+    @media screen and (max-width: 768px) {
+      .lifestyle-box .box {
+        margin-bottom: 20px; } }
+
+.photo-box {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30% 0 15%;
+  margin-top: 100px; }
+  @media screen and (max-width: 1024px) {
+    .photo-box {
+      padding: 5%; } }
+  @media screen and (max-width: 768px) {
+    .photo-box {
+      flex-direction: column;
+      text-align: center; } }
+  .photo-box .box {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px; }
+    .photo-box .box p {
+      font-size: 14px;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      margin-top: 15px; }
+    @media screen and (max-width: 768px) {
+      .photo-box .box {
+        margin-bottom: 20px; } }
+    .photo-box .box h1 {
+      font-size: 20px;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      margin-top: 15px; }
+  @media screen and (max-width: 768px) {
+    .photo-box {
+      margin-bottom: 20px; } }
+
+.container {
+  background-color: #F0F0F0;
+  flex-direction: column; }
+  .container h1 {
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    margin-top: 15px; }
+  .container .enter {
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    .container .enter h2 {
+      font-size: 14px;
+      font-family: "Ubuntu", sans-serif;
+      text-decoration: underline; }
+
+.last-box {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30% 0 15%;
+  margin-top: 100px; }
+  @media screen and (max-width: 1024px) {
+    .last-box {
+      padding: 5%; } }
+  @media screen and (max-width: 768px) {
+    .last-box {
+      flex-direction: column;
+      text-align: center; } }
+  .last-box .box {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px; }
+    .last-box .box p {
+      font-size: 14px;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      margin-top: 15px; }
+    @media screen and (max-width: 768px) {
+      .last-box .box {
+        margin-bottom: 20px; } }
+    .last-box .box h1 {
+      font-size: 20px;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      margin-top: 15px; }
+  @media screen and (max-width: 768px) {
+    .last-box {
+      margin-bottom: 20px; } }
+
+.container {
+  background-color: #fff; }
+  .container h3 {
+    border: 2px solid #000;
+    margin-top: 100px;
+    padding: 20px; }
+
+footer {
+  background-color: #F0F0F0; }
+  footer .privacy h4 {
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  footer .privacy h5 {
+    margin-top: 30px;
+    margin-bottom: 30px; }

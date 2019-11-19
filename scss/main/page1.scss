@@ -1,6 +1,7 @@
 @import ".././modules/variable.scss";
 @import ".././modules/private.scss";
 @import ".././modules/mixins.scss";
+@import ".././basic/fonts.scss";
 
 
 .container{
@@ -9,17 +10,211 @@
    @include flex-position (space-between, center);
 
 .logo {
-    height: 50px;
+    height:$size04;
+    @media screen and (max-width:1024px) 
+    { display: none;
+        
+    }
 }
 nav{
     @extend %flex;
+    @media screen and (max-width:768px) {
+        margin-left: 50px;
+    }
     ul{
         @extend %flex;
         li{
             @include flex-position (space-between, center);
+            margin-right: $size05;
+            a{
+                font-size:$size02;
+                color:$color01;
+                font-family: $font-family01;
+                text-transform: uppercase;
+            }
+            
         }
     }
         
     }
 }
+.container {
+    @media screen  and (max-width: 1024px){
+        width: 100%;
+        
+    }
+}
+.main-poster {
+    @media screen and (max-width:768px){
+        width: 90%;
+    }
+}
+.photodiary{
+    padding: 0 30% 0 15%;
+    p{
+        font-size: $size01;
+        font-family: $font-family02;
+        text-transform: uppercase;
+        margin-top:$margin-top01;
+    }
+    h1{font-size: $size03;
+        font-family: $font-family02;
+        text-transform: uppercase;
+        margin-top:$margin-top01;
 
+    }
+    .diary-txt{
+        font-size: $size01;
+        font-family: $font-family01;
+        margin-top:$margin-top01;
+
+    }
+}
+.lifestyle-box{
+    @extend %flex;
+    @include flex-position (space-between, center);
+    padding: 0 30% 0 15%;
+    margin-top: $margin-top03;
+    @media screen  and (max-width: 1024px){
+        padding: 5%;
+        
+    }
+    @media screen  and (max-width: 768px){
+        flex-direction: column;
+        text-align: center;
+        
+    }
+       .box{
+        @include flex-position (space-between, center);
+        margin-right: 50px;
+          p {
+            font-size: $size01;
+            font-family: $font-family02;
+            text-transform: uppercase;
+            margin-top:$margin-top01;
+            @media screen  and (max-width: 768px){
+                margin-block-start: 20px;
+            }
+        }
+         h1 {font-size: $size02;
+                font-family: $font-family02;
+                text-transform: uppercase;
+                margin-top:$margin-top01;}
+                @media screen  and (max-width: 768px){
+                    margin-bottom: 20px;
+                }
+           
+
+
+       }     
+
+}
+.photo-box{
+    @extend %flex;
+    @include flex-position (space-between, center);
+    padding: 0 30% 0 15%;
+    margin-top: $margin-top03;
+    @media screen  and (max-width: 1024px){
+        padding: 5%;
+        
+    }
+    @media screen  and (max-width: 768px){
+        flex-direction: column;
+        text-align: center;
+        
+    }
+       .box{
+        @include flex-position (space-between, center);
+        margin-right: 50px;
+          p {
+            font-size: $size01;
+            font-family: $font-family02;
+            text-transform: uppercase;
+            margin-top:$margin-top01;}
+            @media screen  and (max-width: 768px){
+                margin-bottom: 20px;
+            }
+         h1 {font-size: $size02;
+                font-family: $font-family02;
+                text-transform: uppercase;
+                margin-top:$margin-top01;}
+         }
+         @media screen  and (max-width: 768px){
+            margin-bottom: 20px;
+        }
+        }
+        .container{
+            background-color: $color02;
+            flex-direction: column;
+            h1{font-size: $size02;
+                font-family: $font-family01;
+                text-transform: uppercase;
+                margin-top:$margin-top01; }
+            .enter{
+                @extend %flex;
+                margin-top: $margin-top04;
+                margin-bottom: $margin-top04;
+                h2{ font-size: $size01;
+                    font-family: $font-family02;
+                    text-decoration: underline;
+                }
+            }    
+        }
+        .last-box{
+            @extend %flex;
+            @include flex-position (space-between, center);
+            padding: 0 30% 0 15%;
+            margin-top: $margin-top03;
+            @media screen  and (max-width: 1024px){
+                padding: 5%;
+                
+            }
+            @media screen  and (max-width: 768px){
+                flex-direction: column;
+                text-align: center;
+                
+            }
+               .box{
+                @include flex-position (space-between, center);
+                margin-right: 50px;
+                  p {
+                    font-size: $size01;
+                    font-family: $font-family02;
+                    text-transform: uppercase;
+                    margin-top:$margin-top01;}
+                    @media screen  and (max-width: 768px){
+                        margin-bottom: 20px;
+                    }
+                 h1 {font-size: $size02;
+                        font-family: $font-family02;
+                        text-transform: uppercase;
+                        margin-top:$margin-top01;}
+                }   
+                @media screen  and (max-width: 768px){
+                    margin-bottom: 20px;
+                }  
+        
+        }
+        .container{
+            background-color:$color03;
+            h3{
+                border:2px solid $color01;
+                margin-top: $margin-top03;
+                padding: 20px;
+            }
+        }
+        footer{
+            background-color:$color02;
+            .privacy{
+            @extend %flex;
+            h4{
+                margin-right: 10px;
+                margin-top: $margin-top02;
+                margin-bottom: 30px;
+            }
+            h5{
+                margin-top: $margin-top02;
+                margin-bottom: 30px;
+            }
+        }
+        }
