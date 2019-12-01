@@ -11,14 +11,14 @@
 
 .logo {
     height:$size04;
-    @media screen and (max-width:1024px) 
+    @media (max-width:1024px) 
     { display: none;
         
     }
 }
 nav{
     @extend %flex;
-    @media screen and (max-width:768px) {
+    @media  (max-width:768px) {
         margin-left: 50px;
     }
     ul{
@@ -38,14 +38,16 @@ nav{
         
     }
 }
+
+
 .container {
-    @media screen  and (max-width: 1024px){
+    @media  (max-width: 1024px){
         width: 100%;
         
     }
 }
 .main-poster {
-    @media screen and (max-width:768px){
+    @media  (max-width:768px){
         width: 90%;
     }
 }
@@ -75,11 +77,11 @@ nav{
     @include flex-position (space-between, center);
     padding: 0 30% 0 15%;
     margin-top: $margin-top03;
-    @media screen  and (max-width: 1024px){
+    @media  (max-width: 1024px){
         padding: 5%;
         
     }
-    @media screen  and (max-width: 768px){
+    @media  (max-width: 768px){
         flex-direction: column;
         text-align: center;
         
@@ -92,7 +94,7 @@ nav{
             font-family: $font-family02;
             text-transform: uppercase;
             margin-top:$margin-top01;
-            @media screen  and (max-width: 768px){
+            @media  (max-width: 768px){
                 margin-block-start: 20px;
             }
         }
@@ -100,7 +102,7 @@ nav{
                 font-family: $font-family02;
                 text-transform: uppercase;
                 margin-top:$margin-top01;}
-                @media screen  and (max-width: 768px){
+                @media (max-width: 768px){
                     margin-bottom: 20px;
                 }
            
@@ -114,11 +116,11 @@ nav{
     @include flex-position (space-between, center);
     padding: 0 30% 0 15%;
     margin-top: $margin-top03;
-    @media screen  and (max-width: 1024px){
+    @media  (max-width: 1024px){
         padding: 5%;
         
     }
-    @media screen  and (max-width: 768px){
+    @media  (max-width: 768px){
         flex-direction: column;
         text-align: center;
         
@@ -131,7 +133,7 @@ nav{
             font-family: $font-family02;
             text-transform: uppercase;
             margin-top:$margin-top01;}
-            @media screen  and (max-width: 768px){
+            @media (max-width: 768px){
                 margin-bottom: 20px;
             }
          h1 {font-size: $size02;
@@ -139,7 +141,7 @@ nav{
                 text-transform: uppercase;
                 margin-top:$margin-top01;}
          }
-         @media screen  and (max-width: 768px){
+         @media  (max-width: 768px){
             margin-bottom: 20px;
         }
         }
@@ -165,11 +167,11 @@ nav{
             @include flex-position (space-between, center);
             padding: 0 30% 0 15%;
             margin-top: $margin-top03;
-            @media screen  and (max-width: 1024px){
+            @media  (max-width: 1024px){
                 padding: 5%;
                 
             }
-            @media screen  and (max-width: 768px){
+            @media  (max-width: 768px){
                 flex-direction: column;
                 text-align: center;
                 
@@ -182,7 +184,7 @@ nav{
                     font-family: $font-family02;
                     text-transform: uppercase;
                     margin-top:$margin-top01;}
-                    @media screen  and (max-width: 768px){
+                    @media  (max-width: 768px){
                         margin-bottom: 20px;
                     }
                  h1 {font-size: $size02;
@@ -190,9 +192,9 @@ nav{
                         text-transform: uppercase;
                         margin-top:$margin-top01;}
                 }   
-                @media screen  and (max-width: 768px){
-                    margin-bottom: 20px;
-                }  
+                @media  (max-width: 768px){
+            margin-bottom: 20px;
+        }  
         
         }
         .container{
